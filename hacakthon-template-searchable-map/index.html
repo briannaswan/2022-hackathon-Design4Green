@@ -145,7 +145,7 @@
                 </table>
               </div>
             </div>
-            <p class='float-right'>Based on <a href='https://github.com/datamade/searchable-map-template-csv' target='_blank'>Searchable Map Template - CSV</a> by <a href='https://derekeder.com/' target='_blank'>Derek Eder</a> and <a href='https://datamade.us/' target='_blank'>DataMade</a></p>
+           
           </div>
         </div>
 
@@ -167,7 +167,21 @@
         </div><!-- /.modal -->
 
         <script type="text/javascript" src="js/map.js"></script>
-
+        <style>
+          .btn-group {
+              text-align: right;
+              height: 40vh;
+              width: 50vw;
+          }
+      </style>
+      <div class="btn-group">
+        <form method="get" action="data/d4g.pdf">
+          <button id="slide_start_button" type="submit">Download as PDF</button>
+       </form>
+       <form method="get" action="data/d4g.xlsx">
+        <button id="slide_stop_button" type="submit">Download as xlsx</button>
+      </div>
+     </form>
     </main>
   </body>
 </html>
