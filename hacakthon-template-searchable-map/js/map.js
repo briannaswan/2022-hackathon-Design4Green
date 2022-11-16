@@ -13,8 +13,8 @@ $(function() {
     recordName: 'course location',
     recordNamePlural: 'course locations',
     map_centroid: [46.263615, 2.178741],
-    defaultZoom:  0,
-    defaultRadius: 1610,
+    defaultZoom:  9,
+    defaultRadius: 5000,
     debug: true,
   });
 
