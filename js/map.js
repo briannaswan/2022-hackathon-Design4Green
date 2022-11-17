@@ -8,8 +8,8 @@ $(window).resize(function () {
 $(function() {
 
   SearchableMapLib.initialize({
-    filePath: 'data/locations-data.csv',
-    fileType: 'csv',
+    filePath: 'data/locations-data.geojson',
+    fileType: 'geojson',
     recordName: 'course location',
     recordNamePlural: 'course locations',
     map_centroid: [46.263615, 2.178741],
