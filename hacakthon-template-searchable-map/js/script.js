@@ -46,6 +46,7 @@ function addToCart(elem) {
     else {
         //get existing cart data from storage and convert back into array
        cart = JSON.parse(sessionStorage.getItem('cart'));
+       if(cart.length < 3){
         //append new product JSON object
         cart.push(stringProduct);
         //cart back to JSON
@@ -54,6 +55,10 @@ function addToCart(elem) {
         sessionStorage.setItem('cart', stringCart);
         addedToCart(getproductName);
         updateCartTotal();
+    }
+    else{
+        alert("You can only select a maximum of 3 courses at a time.");
+    }
     }
 }
 /* Calculate Cart Total */
