@@ -10,7 +10,7 @@ var SearchableMapLib = {
   listOrderBy: '',
   recordName: '',
   recordNamePlural: '',
-  debug: true,
+  debug: false,
 
   // internal properties
   radius: '',
@@ -272,6 +272,15 @@ var SearchableMapLib = {
         });
     }
     //-----end name search filter-----
+
+    //-----category search filter-----
+    var category_search = $("#search-category").val().replace("'", "\\'");
+    if (category_search != '') {
+      SearchableMapLib.currentResults.features = $.grep(SearchableMapLib.currentResults.features, function(r) {
+          return r.properties["Type"].toLowerCase().indexOf(category_search.toLowerCase()) > -1;
+        });
+    }
+    //-----end category search filter-----
 
     // -----end of custom filters-----
 

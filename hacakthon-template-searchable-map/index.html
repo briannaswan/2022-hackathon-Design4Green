@@ -31,6 +31,7 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="css/custom.css"/>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="lib/jquery-3.3.1.min.js"></script>
@@ -56,12 +57,14 @@
     <script src="js/searchable_map_lib.js"></script>
     <script src="js/analytics_lib.js"></script>
 
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
     <nav class="navbar navbar-expand-md navbar-light mb-2">
       <a class="navbar-brand" href="/">
-        Design4Green Hackathon
+      <h1>  Design4Green Hackathon </h1>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -90,20 +93,20 @@
               <div class='row'>
                 <div class="col-md-8">
                   <div class="form-group">
-                      Near an address
-                      <input class='form-control' id='search-address' placeholder='Enter an address' type='text'>
+                    Near an address
+                    <input class='form-control' id='search-address' placeholder='Enter an address' type='text'>
                   </div>
                 </div>
 
                 <div class="col-md-4">
                   <div class='form-group'>
-                      Within
-                      <select id='search-radius' class='form-control'>
-                        <option value='1000'>1 km</option>
-                        <option value='5000'>5 km</option>
-                        <option value='25000'>25 km</option>
-                        <option value='50000'>50 km</option>
-                        <option value='10000'>100 km</option>
+                    Within
+                    <select id='search-radius' class='form-control'>
+                      <option value='1000'>1 km</option>
+                      <option value='5000'>5 km</option>
+                      <option value='25000'>25 km</option>
+                      <option value='50000'>50 km</option>
+                      <option value='10000'>100 km</option>
                       </select>
                   </div>
                 </div>
@@ -111,9 +114,18 @@
 
               <div class='row'>
                 <div class="col-md-12">
-                  <div class="form-group">
-                      Search by name
-                      <input class='form-control' id='search-name' placeholder='Enter a business or organization name' type='text'>
+                  <div class="form-group"> 
+                      Search by organization
+                      <input class='form-control' id='search-name' placeholder='Enter an organization name' type='text'>
+                  </div>
+                </div>
+              </div>
+
+              <div class='row'>
+                <div class="col-md-12">
+                  <div class="form-group"> 
+                      Search by category
+                      <input class='form-control' id='search-category' placeholder='Enter a category (Initial training, Continuing Education, or Initial training et Continuing Education)' type='text'>
                   </div>
                 </div>
               </div>
@@ -145,7 +157,7 @@
                 </table>
               </div>
             </div>
-            <p class='float-right'>Based on <a href='https://github.com/datamade/searchable-map-template-csv' target='_blank'>Searchable Map Template - CSV</a> by <a href='https://derekeder.com/' target='_blank'>Derek Eder</a> and <a href='https://datamade.us/' target='_blank'>DataMade</a></p>
+            
           </div>
         </div>
 
@@ -168,6 +180,566 @@
 
         <script type="text/javascript" src="js/map.js"></script>
 
+
+        <div class="container"> 
+          <h4>Available Courses</h4>
+          <div id="alerts"></div>
+       <div class="productcont">
+               <div class="product">
+                   <h5 class="productname">Sustainable Developer</h5>
+                   <p>The Green Companion</p>
+                   <button class="addtocart">Select</button>
+               </div>
+               <div class="product">
+                   <h5 class="productname">Sustainable Developer</h5>
+                   <p>The Green Companion</p>
+                   <button class="addtocart">Select</button>
+               </div>
+               <div class="product">
+                   <h5 class="productname">Sustainable Infrastructure</h5>
+                   <p>The Green Companion</p>
+                   <button class="addtocart">Select</button>
+               </div>
+               <div class="product">
+                 <h5 class="productname">Digital impact and key concepts of Ecodesign</h5>
+                 <p>The Green Companion</p>
+                 <button class="addtocart">Select</button>
+             </div>
+               </div>
+               <br>
+               <div class="productcont">
+                 <div class="product">
+                     <h5 class="productname">Apply the principles of GreenIT</h5>
+                     <p>-</p>
+                     <button class="addtocart">Select</button>
+                 </div>
+                 <div class="product">
+                     <h5 class="productname">Sustainable Digital</h5>
+                     <p>Pollen</p>
+                     <button class="addtocart">Select</button>
+                 </div>
+                 <div class="product">
+                     <h5 class="productname">Website Ecodesign</h5>
+                     <p>Pollen</p>
+                     <button class="addtocart">Select</button>
+                 </div>
+                 <div class="product">
+                   <h5 class="productname">Accessibility and web quality assurance</h5>
+                   <p>Pollen</p>
+                   <button class="addtocart">Select</button>
+               </div>
+                 </div>
+                 <br>
+                 <div class="productcont">
+                   <div class="product">
+                       <h5 class="productname">Ecodesign - Project Management</h5>
+                       <p>INFOGREEN FACTORY</p>
+                       <button class="addtocart">Select</button>
+                   </div>
+                   <div class="product">
+                       <h5 class="productname">Sustainable Digital</h5>
+                       <p>INFOGREEN FACTORY</p>
+                       <button class="addtocart">Select</button>
+                   </div>
+                   <div class="product">
+                       <h5 class="productname">Sustainable developer (front and back)</h5>
+                       <p>The Green Companion</p>
+                       <button class="addtocart">Select</button>
+                   </div>
+                   <div class="product">
+                     <h5 class="productname">Sustainable Designer</h5>
+                     <p>The Green Companion</p>
+                     <button class="addtocart">Select</button>
+                   </div>
+                 </div>
+                 <br>
+                 <div class="productcont">
+                   <div class="product">
+                       <h5 class="productname">Ecodesign tools, GR 491 and ESMR</h5>
+                       <p>IHMISEN</p>
+                       <button class="addtocart">Select</button>
+                   </div>
+                   <div class="product">
+                       <h5 class="productname">Initiate a Sustainable Digital approach in 
+                         my company</h5>
+                       <p>Ecologeek</p>
+                       <button class="addtocart">Select</button>
+                   </div>
+                   <div class="product">
+                       <h5 class="productname">Green IT</h5><br>
+                       <p>M.I.R</p>
+                       <br>
+                       <button class="addtocart">Select</button>
+                   </div>
+                   <div class="product">
+                     <h5 class="productname">Sustainable Digital Awareness</h5>
+                       <p>Ihmisen Academy</p>
+                     <button class="addtocart">Select</button>
+                   </div>
+                 </div>
+                 <br>
+                 <div class="productcont">
+                   <div class="product">
+                       <h5 class="productname">Ecodesign for 
+                         Manager</h5>
+                       <p>Ihmisen Academy</p>
+                       <button class="addtocart">Select</button>
+                   </div>
+                   <div class="product">
+                       <h5 class="productname">Ecodesign for 
+                         Project Management</h5>
+                       <p>Ihmisen Academy</p>
+                       <button class="addtocart">Select</button>
+                   </div>
+                   <div class="product">
+                       <h5 class="productname">Ecodesign for 
+                         Developers</h5>
+                       <p>Ihmisen Academy</p>
+                       <button class="addtocart">Select</button>
+                   </div>
+                   <div class="product">
+                     <h5 class="productname">INR's "Sustainable 
+                       Digital Service Design"</h5>
+                     <p>Ihmisen Academy</p>
+                     <button class="addtocart">Select</button>
+                   </div>
+                 </div>
+                 <br>
+                 <div class="productcont">
+                   <div class="product">
+                       <h5 class="productname">Ecodesign for 
+                         Professionals</h5>
+                         <p>Ihmisen Academy</p>
+                       <button class="addtocart">Select</button>
+                   </div>
+                   <div class="product">
+                       <h5 class="productname">Ecodesign for Lead 
+                         Dev, Developers and UX Designers</h5>
+                         <p>Ihmisen Academy</p>
+                       <button class="addtocart">Select</button>
+                   </div>
+                   <div class="product">
+                     <h5 class="productname">Understanding digital responsibility & the 
+                       digital eco-design approach</h5>
+                       <p>Temesis</p>
+                     <button class="addtocart">Select</button>
+                   </div>
+                 </div>
+                 <br>
+               <div class="productcont">
+                 <div class="product">
+                     <h5 class="productname">The Digital Fresco</h5>
+                     <p>La Fresque Du 
+                       Numérique</p>
+                     <button class="addtocart">Select</button>
+                 </div>
+                 <div class="product">
+                     <h5 class="productname">Mastering the challenges and managing a 
+                       Sustainable Digital approach </h5>
+                     <p>Agence Lucie</p>
+                     <button class="addtocart">Select</button>
+                 </div>
+                 <div class="product">
+                     <h5 class="productname">Digital Sobriety and Eco-Sustainable 
+                       Internet</h5>
+                     <p>TkPx</p>
+                     <button class="addtocart">Select</button>
+                 </div>
+               </div>
+               <br>
+               <div class="productcont">
+                 <div class="product">
+                     <h5 class="productname">Sustainable Digital Trivia Workshop</h5>
+                     <p>OM Conseil</p>
+                     <button class="addtocart">Select</button>
+                 </div>
+                 <div class="product">
+                     <h5 class="productname">Initiating Sustainable Digital 
+                       Transformation</h5>
+                     <p>Orsys</p>
+                     <button class="addtocart">Select</button>
+                 </div>
+                 <div class="product">
+                     <h5 class="productname">Ecodesign of digital services</h5>
+                     <p>Orsys</p>
+                     <button class="addtocart">Select</button>
+                 </div>
+                 <div class="product">
+                   <h5 class="productname">Green IT approach</h5>
+                     <p>Orsys</p>
+                   <button class="addtocart">Select</button>
+                 </div>
+               </div>
+               <br>
+               <div class="productcont">
+                 <div class="product">
+                     <h5 class="productname">Green Data Center, optimising energy 
+                       performance</h5>
+                     <p>Orsys</p>
+                     <button class="addtocart">Select</button>
+                 </div>
+                 <div class="product">
+                     <h5 class="productname">Raising awareness of digital accessibility</h5>
+                     <p>Orsys</p>
+                     <button class="addtocart">Select</button>
+                 </div>
+                 <div class="product">
+                     <h5 class="productname">Digital accessibility in a project</h5>
+                     <p>Orsys</p>
+                     <button class="addtocart">Select</button>
+                 </div>
+                 <div class="product">
+                   <h5 class="productname">RGAA, auditing accessibility of 
+                     website or mobile app</h5>
+                     <p>Orsys</p>
+                   <button class="addtocart">Select</button>
+                 </div>
+               </div>
+               <br>
+               <div class="productcont">
+                 <div class="product">
+                     <h5 class="productname">Understanding the challenges of digital 
+                       responsibility</h5>
+                     <p>ESAIP</p>
+                     <button class="addtocart">Select</button>
+                 </div>
+                 <div class="product">
+                     <h5 class="productname">Software eco-design</h5>
+                     <p>ESAIP</p>
+                     <button class="addtocart">Select</button>
+                 </div>
+                 <div class="product">
+                     <h5 class="productname">Eco-Sustainable Systems and Networks</h5>
+                     <p>ESAIP</p>
+                     <button class="addtocart">Select</button>
+                 </div>
+                 <div class="product">
+                   <h5 class="productname">Discovering digital accessibility</h5>
+                     <p>Ideance</p>
+                   <button class="addtocart">Select</button>
+                 </div>
+               </div>
+               <br>
+               <div class="productcont">
+                 <div class="product">
+                     <h5 class="productname">Steering the inclusion of accessibility</h5>
+                     <p>Ideance</p>
+                     <button class="addtocart">Select</button>
+                 </div>
+                 <div class="product">
+                     <h5 class="productname">Designing accessible interfaces</h5>
+                     <p>Ideance</p>
+                     <button class="addtocart">Select</button>
+                 </div>
+                 <div class="product">
+                     <h5 class="productname">Writing and publishing accessible content</h5>
+                     <p>Ideance</p>
+                     <button class="addtocart">Select</button>
+                 </div>
+                 <div class="product">
+                   <h5 class="productname">Developing accessible websites and 
+                     applications</h5>
+                     <p>Ideance</p>
+                   <button class="addtocart">Select</button>
+                 </div>
+               </div>
+               <br>
+               <div class="productcont">
+                 <div class="product">
+                     <h5 class="productname">Developing accessible mobile applications</h5>
+                     <p>Ideance</p>
+                     <button class="addtocart">Select</button>
+                 </div>
+                 <div class="product">
+                     <h5 class="productname">Understanding digital responsibility & the 
+                       digital eco-design approach</h5>
+                     <p>Temesis</p>
+                     <button class="addtocart">Select</button>
+                 </div>
+                 <div class="product">
+                     <h5 class="productname">Green IT</h5>
+                     <p>University of Pau</p>
+                     <button class="addtocart">Select</button>
+                 </div>
+                 <div class="product">
+                   <h5 class="productname">Climate Mural</h5>
+                     <p>University of Bordeaux</p>
+                   <button class="addtocart">Select</button>
+                 </div>
+               </div>
+               <br>
+               <div class="productcont">
+                 <div class="product">
+                     <h5 class="productname">Climate Emergency</h5>
+                     <p>University of Bordeaux</p>
+                     <button class="addtocart">Select</button>
+                 </div>
+                 <div class="product">
+                     <h5 class="productname">Eco-Design</h5>
+                     <p>University of Bordeaux</p>
+                     <button class="addtocart">Select</button>
+                 </div>
+                 <div class="product">
+                     <h5 class="productname">EU CS and Sustainable Development</h5>
+                     <p>University of Bordeaux</p>
+                     <button class="addtocart">Select</button>
+                 </div>
+               </div>
+               <br>
+               <div class="productcont">
+                 <div class="product">
+                     <h5 class="productname">IT and Sustainable development</h5>
+                     <p>Polytech Lille</p>
+                     <button class="addtocart">Select</button>
+                 </div>
+                 <div class="product">
+                     <h5 class="productname">IT DUT - Smart Connected Environment</h5>
+                     <p>La Rochelle University</p>
+                     <button class="addtocart">Select</button>
+                 </div>
+                 <div class="product">
+                     <h5 class="productname">Digital and energetic consumption</h5>
+                     <p>Telecom Sud Paris</p>
+                     <button class="addtocart">Select</button>
+                 </div>
+                 <div class="product">
+                   <h5 class="productname">Sustainable digital</h5>
+                     <p>La Rochelle University</p>
+                   <button class="addtocart">Select</button>
+                 </div>
+               </div>
+               <br>
+               <div class="productcont">
+                 <div class="product">
+                     <h5 class="productname">Digital Responsibility</h5>
+                     <p>IMT Mines Albi</p>
+                     <button class="addtocart">Select</button>
+                 </div>
+                 <div class="product">
+                     <h5 class="productname">Digital Responsibility</h5>
+                     <p>University of Toulouse</p>
+                     <button class="addtocart">Select</button>
+                 </div>
+                 <div class="product">
+                     <h5 class="productname">Digital Responsibility Awareness</h5>
+                     <p>University Paul Valéry</p>
+                     <button class="addtocart">Select</button>
+                 </div>
+                 <div class="product">
+                   <h5 class="productname">Digital Responsibility Awareness</h5>
+                     <p>IMT Mines Alès</p>
+                   <button class="addtocart">Select</button>
+                 </div>
+               </div>
+               <br>
+               <div class="productcont">
+                 <div class="product">
+                     <h5 class="productname">#NumériqueTraining</h5>
+                     <p>Audencia</p>
+                     <button class="addtocart">Select</button>
+                 </div>
+                 <div class="product">
+                     <h5 class="productname">Digital hidden face</h5>
+                     <p>IMT Atlantique</p>
+                     <button class="addtocart">Select</button>
+                 </div>
+                 <div class="product">
+                     <h5 class="productname">Introduction to ecodesign of digital services</h5>
+                     <p>Agence Lucie</p>
+                     <button class="addtocart">Select</button>
+                 </div>
+                 <div class="product">
+                   <h5 class="productname">Sustainable digital service (eco)design</h5>
+                     <p>Octo Academy</p>
+                   <button class="addtocart">Select</button>
+                 </div>
+               </div>
+               <br>
+               <div class="productcont">
+                 <div class="product">
+                     <h5 class="productname">GreenIT</h5>
+                     <p>Ecoles des Mines de Nantes</p>
+                     <button class="addtocart">Select</button>
+                 </div>
+                 <div class="product">
+                     <h5 class="productname">Eco-design of Digital Services Training</h5>
+                     <p>PLB Consultant</p>
+                     <button class="addtocart">Select</button>
+                 </div>
+                 <div class="product">
+                     <h5 class="productname">Understanding and implementing an ecodesign approach</h5>
+                     <p>CETIM</p>
+                     <button class="addtocart">Select</button>
+                 </div>
+                 <div class="product">
+                   <h5 class="productname">Products innovation</h5>
+                     <p>CETIM</p>
+                   <button class="addtocart">Select</button>
+                 </div>
+               </div>
+               <br>
+               <div class="productcont">
+                 <div class="product">
+                     <h5 class="productname">Life Cycle Assessment of Products</h5>
+                     <p>CETIM</p>
+                     <button class="addtocart">Select</button>
+                 </div>
+                 <div class="product">
+                     <h5 class="productname">ESIEE (CCI Paris)</h5>
+                     <p>ESIEE[IT]</p>
+                     <button class="addtocart">Select</button>
+                 </div>
+                 <div class="product">
+                     <h5 class="productname">Raising awareness of digital sustainability and eco-design</h5>
+                     <p>TEMESIS</p>
+                     <button class="addtocart">Select</button>
+                 </div>
+                 <div class="product">
+                   <h5 class="productname">Good Practice in eco-design and digital sustainability</h5>
+                     <p>TEMESIS</p>
+                   <button class="addtocart">Select</button>
+                 </div>
+               </div>
+               <br>
+               <div class="productcont">
+                 <div class="product">
+                     <h5 class="productname">Understanding digital sustainability</h5>
+                     <p>TEMESIS</p>
+                     <button class="addtocart">Select</button>
+                 </div>
+                 <div class="product">
+                     <h5 class="productname">Understanding digital eco-design approach</h5>
+                     <p>TEMESIS</p>
+                     <button class="addtocart">Select</button>
+                 </div>
+                 <div class="product">
+                     <h5 class="productname">Online training</h5>
+                     <p>TEMESIS</p>
+                     <button class="addtocart">Select</button>
+                 </div>
+                 <div class="product">
+                   <h5 class="productname">Title of Digital Mediation Space Manager</h5>
+                     <p>EMERAUDE COMPETENCES MFR - CFA</p>
+                   <button class="addtocart">Select</button>
+                 </div>
+               </div>
+               <br>
+               <div class="productcont">
+                 <div class="product">
+                     <h5 class="productname">Fullstack developer</h5>
+                     <p>IT Akademy</p>
+                     <button class="addtocart">Select</button>
+                 </div>
+                 <div class="product">
+                     <h5 class="productname">Sustainable Digital</h5>
+                     <p>Competens</p>
+                     <button class="addtocart">Select</button>
+                 </div>
+                 <div class="product">
+                     <h5 class="productname">Awareness of eco-design of digital services</h5>
+                     <p>Orange</p>
+                     <button class="addtocart">Select</button>
+                 </div>
+                 <div class="product">
+                   <h5 class="productname">Web eco-design</h5>
+                     <p>Orange Carré</p>
+                   <button class="addtocart">Select</button>
+                 </div>
+               </div>
+               <br>
+               <div class="productcont">
+                 <div class="product">
+                     <h5 class="productname">Eco-design of websites</h5>
+                     <p>Corymbe</p>
+                     <button class="addtocart">Select</button>
+                 </div>
+                 <div class="product">
+                     <h5 class="productname">Integrating Digital Sustainability into Tourism & CSR strategy</h5>
+                     <p>Green Tourism Digital Collective</p>
+                     <button class="addtocart">Select</button>
+                 </div>
+                 <div class="product">
+                     <h5 class="productname">Sustainable digital design</h5>
+                     <p>Jujotte</p>
+                     <button class="addtocart">Select</button>
+                 </div>
+                 <div class="product">
+                   <h5 class="productname">digital eco-design approach</h5>
+                     <p>TEMESIS</p>
+                   <button class="addtocart">Select</button>
+                 </div>
+               </div>
+               <br>
+               <div class="productcont">
+                 <div class="product">
+                     <h5 class="productname">Ecodesign & digital design pro workshop</h5>
+                     <p>association</p>
+                     <button class="addtocart">Select</button>
+                 </div>
+                 <div class="product">
+                     <h5 class="productname">Designers Ethiques</h5>
+                     <p>association</p>
+                     <button class="addtocart">Select</button>
+                 </div>
+                 <div class="product">
+                     <h5 class="productname">Introduction to Sustainable Digital strategy</h5>
+                     <p>-</p>
+                     <button class="addtocart">Select</button>
+                 </div>
+                 <div class="product">
+                   <h5 class="productname">Sustainable IT purchase</h5>
+                     <p>-</p>
+                   <button class="addtocart">Select</button>
+                 </div>
+               </div>
+               <div class="cart-container">
+                 <h4>Cart</h4>
+                 <table>
+                   <thead>
+                     <tr>
+                     <th><strong>Courses</strong></th>
+                     <!-- <th><strong>Price</strong></th> -->
+                   </tr>
+                   </thead>
+                   <tbody id="carttable">
+                   </tbody>
+                 </table>
+                 <hr>
+                 <table id="carttotals">
+                   <tr>
+                     <td><strong>Items</strong></td>
+                     <!-- <td><strong>Total</strong></td> -->
+                   </tr>
+                   <tr>
+                     <td>x <span id="itemsquantity">0</span></td>
+
+                     <!-- <td><span id="total"></span>0</td> -->
+                   </tr></table>
+
+
+                 <div class="cart-buttons">  
+                   <button id="emptycart">Empty Cart</button>
+                   <button id="checkout">Get Quote</button>
+                 </div>
+               </div>
+       </div>
+
+<style>
+        .btn-group {
+            text-align: right;
+            height: 40vh;
+            width: 50vw;
+        }
+    </style>
+    <div class="btn-group">
+      <form method="get" action="data/d4g.pdf">
+        <button id="slide_start_button" type="submit">Download as PDF</button>
+     </form>
+     <form method="get" action="data/d4g.xlsx">
+      <button id="slide_stop_button" type="submit">Download as XLSX</button>
+    </div>
+   </form>      
     </main>
+    <script  src="./js/script.js"></script> 
   </body>
 </html>
