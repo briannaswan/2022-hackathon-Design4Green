@@ -49,7 +49,7 @@
     <link rel="stylesheet" href="css/leaflet.css"/>
     <script src="lib/leaflet.js"></script>
     <script src='lib/turf.min.js'></script>
-    <script src="https://maps.google.com/maps/api/js?libraries=places&key=AIzaSyBQCc3yDxmmg-U7qcJY6nkbcbbvsimV7QQ"></script>
+    <script src="https://maps.google.com/maps/api/js?libraries=places&key=AIzaSyBQCc3yDxmmg-U7qcJY6nkbcbbvsimV7QQ" async defer></script>
     <script src="lib/Leaflet.GoogleMutant.js" ></script>
     <script src="lib/leaflet-color-markers.js" ></script>
     
@@ -104,9 +104,9 @@
                     <select id='search-radius' class='form-control'>
                       <option value='1000'>1 km</option>
                       <option value='5000'>5 km</option>
+                      <option value='10000'>10 km</option>
                       <option value='25000'>25 km</option>
                       <option value='50000'>50 km</option>
-                      <option value='10000'>100 km</option>
                       </select>
                   </div>
                 </div>
