@@ -46,6 +46,7 @@ function addToCart(elem) {
     else {
         //get existing cart data from storage and convert back into array
        cart = JSON.parse(sessionStorage.getItem('cart'));
+       // add limit to number of items in cart
         //append new product JSON object
         cart.push(stringProduct);
         //cart back to JSON

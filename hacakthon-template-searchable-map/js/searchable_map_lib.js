@@ -269,7 +269,7 @@ var SearchableMapLib = {
     var name_search = $("#search-name").val().replace("'", "\\'");
     if (name_search != '') {
       SearchableMapLib.currentResults.features = $.grep(SearchableMapLib.currentResults.features, function(r) {
-          return r.properties["Facility Name"].toLowerCase().indexOf(name_search.toLowerCase()) > -1;
+          return r.properties["Organization Name"].toLowerCase().indexOf(name_search.toLowerCase()) > -1;
         });
     }
     //-----end name search filter-----
