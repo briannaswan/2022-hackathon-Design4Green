@@ -33,6 +33,7 @@ var SearchableMapLib = {
     SearchableMapLib.recordName = options.recordName || "result",
     SearchableMapLib.recordNamePlural = options.recordNamePlural || "results",
     SearchableMapLib.radius = options.defaultRadius || 1000,
+    SearchableMapLib.mode = options.defaultRadius || "",
     SearchableMapLib.debug = options.debug || false
 
     if (SearchableMapLib.debug)
@@ -281,6 +282,15 @@ var SearchableMapLib = {
         });
     }
     //-----end category search filter-----
+
+    //-----learning mode search filter-----
+    var mode_search = $("#search-mode").val().replace("'", "\\'");
+    if (mode_search != '') {
+      SearchableMapLib.currentResults.features = $.grep(SearchableMapLib.currentResults.features, function(r) {
+          return r.properties["Learning Mode"].toLowerCase().indexOf(mode_search.toLowerCase()) > -1;
+        });
+    }
+    //-----end learning mode search filter-----
 
     // -----end of custom filters-----
 

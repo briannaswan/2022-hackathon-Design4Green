@@ -55,7 +55,7 @@ $(function() {
     }
   });
 
-  $("#search-address, #search-name").keydown(function(e){
+  $("#search-address, #search-name, #search-category, #search-mode").keydown(function(e){
       var key =  e.keyCode ? e.keyCode : e.which;
       if(key == 13) {
           $('#btnSearch').click();
@@ -70,5 +70,5 @@ $(function() {
 });
 
 function formatAddress(prop) {
-    return prop["Street1"] + " " + prop["Street2"] + " " + prop["City"] + " " + prop["State"];
+    return prop["City"] + ", " + prop["Country"];
 }
