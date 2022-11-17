@@ -32,7 +32,7 @@ var SearchableMapLib = {
     SearchableMapLib.listOrderBy = options.listOrderBy || "",
     SearchableMapLib.recordName = options.recordName || "result",
     SearchableMapLib.recordNamePlural = options.recordNamePlural || "results",
-    SearchableMapLib.radius = options.defaultRadius || 805,
+    SearchableMapLib.radius = options.defaultRadius || 1000,
     SearchableMapLib.debug = options.debug || false
 
     if (SearchableMapLib.debug)
@@ -317,11 +317,11 @@ var SearchableMapLib = {
 
   setZoom: function() {
     var zoom = '';
-    if (SearchableMapLib.radius >= 8050) zoom = 12; // 5 miles
-    else if (SearchableMapLib.radius >= 3220) zoom = 13; // 2 miles
-    else if (SearchableMapLib.radius >= 1610) zoom = 14; // 1 mile
-    else if (SearchableMapLib.radius >= 805) zoom = 15; // 1/2 mile
-    else if (SearchableMapLib.radius >= 400) zoom = 16; // 1/4 mile
+    if (SearchableMapLib.radius >= 50000) zoom = 12; // 50 km
+    else if (SearchableMapLib.radius >= 25000) zoom = 13; // 25 km
+    else if (SearchableMapLib.radius >= 10000) zoom = 14; // 10 km
+    else if (SearchableMapLib.radius >= 5000) zoom = 15; // 5 km
+    else if (SearchableMapLib.radius >= 1000) zoom = 16; // 1 km
     else zoom = 16;
 
     SearchableMapLib.map.setView(new L.LatLng( SearchableMapLib.currentPinpoint[0], SearchableMapLib.currentPinpoint[1] ), zoom)
