@@ -125,7 +125,26 @@
                 <div class="col-md-12">
                   <div class="form-group"> 
                       Search by category
-                      <input class='form-control' id='search-category' placeholder='Enter a category (Initial training, Continuing Education, or Initial training et Continuing Education)' type='text'>
+                      <select id='search-category' class='form-control'>
+                        <option value=''>Select a category</option>
+                        <option value='Continuing Education'>Continuing Education</option>
+                        <option value='Initial training'>Initial training</option>
+                        <option value='Initial training et Continuing Education'>Initial training & Continuing Education</option>
+                        </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class='row'>
+                <div class="col-md-12">
+                  <div class="form-group"> 
+                      Search by learning mode
+                      <select id='search-mode' class='form-control'>
+                        <option value=''>Select a learning mode</option>
+                        <option value='Distance learning'>Distance learning</option>
+                        <option value='Face-to-face'>Face-to-face</option>
+                        <option value='Face-to-face and distance learning'>Face-to-face and distance learning</option>
+                        </select>
                   </div>
                 </div>
               </div>
@@ -147,10 +166,10 @@
                 <table class="table">
                   <thead>
                     <tr>
+                      <th scope="col">Organization</th>
                       <th scope="col">Location</th>
-                      <th scope="col">Address</th>
-                      <th scope="col">Phone</th>
-                      <th scope="col">Hours</th>
+                      <th scope="col">Course Name</th>
+                      <th scope="col">Learning Mode</th>
                     </tr>
                   </thead>
                   <tbody id='results-list'></tbody>
